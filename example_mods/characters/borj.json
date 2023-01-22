@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				480,
+				320
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				490,
+				556
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				436,
+				250
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				421,
+				261
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				340,
+				215
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/borj",
+	"position": [
+		0,
+		-90
+	],
+	"healthicon": "borj",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		145,
+		0
+	],
+	"camera_position": [
+		-650,
+		-160
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

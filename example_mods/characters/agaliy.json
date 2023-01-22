@@ -1,0 +1,115 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-83
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [
+				10,
+				11,
+				12
+			],
+			"name": "AGALIY-down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "AGALIY-idle"
+		},
+		{
+			"offsets": [
+				-102,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "AGALIY-left"
+		},
+		{
+			"offsets": [
+				0,
+				-86
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "AGALIY-down"
+		},
+		{
+			"offsets": [
+				-66,
+				26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "AGALIY-up"
+		},
+		{
+			"offsets": [
+				-116,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "AGALIY-right"
+		},
+		{
+			"offsets": [
+				10,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "reload",
+			"loop": false,
+			"name": "AGALIY-reload"
+		},
+		{
+			"offsets": [
+				55,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "shoot",
+			"loop": false,
+			"name": "AGALIY-shoot"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/agaliy",
+	"position": [
+		-40,
+		20
+	],
+	"healthicon": "agaliy",
+	"flip_x": false,
+	"healthbar_colors": [
+		48,
+		30,
+		68
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1
+}

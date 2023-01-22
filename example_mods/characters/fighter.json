@@ -1,0 +1,191 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				20,
+				-69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "BF dies"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "BF Dead Loop"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "BF Dead confirm"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "FIGHTER-idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "FIGHTER-left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-79
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "FIGHTER-down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				107
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "FIGHTER-up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-40
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "FIGHTER-right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				37
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "FIGHTER-l-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				39,
+				-170
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "FIGHTER-d-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				380,
+				20
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "FIGHTER-u-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				-85
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "FIGHTER-r-miss",
+			"indices": []
+		},
+		{
+			"offsets": [
+				10,
+				10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "come-here",
+			"indices": [],
+			"name": "FIGHTER-IDI-SYUDA"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				134,
+				73
+			],
+			"anim": "falling",
+			"fps": 24,
+			"name": "FIGHTER-FUCKING-FALLING-LOOOL",
+			"indices": []
+		},
+		{
+			"offsets": [
+				134,
+				73
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [
+				39,
+				40
+			],
+			"name": "FIGHTER-FUCKING-FALLING-LOOOL"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/THE-FIGHTER",
+	"position": [
+		-20,
+		150
+	],
+	"healthicon": "fighter",
+	"flip_x": true,
+	"healthbar_colors": [
+		107,
+		81,
+		147
+	],
+	"camera_position": [
+		155,
+		-130
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

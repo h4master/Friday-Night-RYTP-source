@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "SNOWMAN SUPREMACY"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "SNOWMAN SUPREMACY"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "SNOWMAN SINGS WTF"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "SNOWMAN SINGS WTF"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "SNOWMAN SINGS WTF"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "SNOWMAN SINGS WTF"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SNOWMAN_SUPREMACY",
+	"position": [
+		40,
+		240
+	],
+	"healthicon": "snowman",
+	"flip_x": false,
+	"healthbar_colors": [
+		244,
+		242,
+		252
+	],
+	"camera_position": [
+		200,
+		-120
+	],
+	"sing_duration": 1,
+	"scale": 1
+}

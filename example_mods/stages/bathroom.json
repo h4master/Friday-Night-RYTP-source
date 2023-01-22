@@ -1,0 +1,9 @@
+{
+	"directory": "bathroom",
+	"defaultZoom": 1.1,
+	"isPixelStage": false,
+
+	"boyfriend": [207, 50],
+	"girlfriend": [10, 20],
+	"opponent": [100, 90]
+}

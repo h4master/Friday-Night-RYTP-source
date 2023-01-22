@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "SB-idle"
+		},
+		{
+			"offsets": [
+				270,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "SB-left"
+		},
+		{
+			"offsets": [
+				43,
+				-62
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "SB-down"
+		},
+		{
+			"offsets": [
+				194,
+				37
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "SB-up"
+		},
+		{
+			"offsets": [
+				-20,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "SB-right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/steklobaba",
+	"position": [
+		10,
+		-140
+	],
+	"healthicon": "steklobaba",
+	"flip_x": false,
+	"healthbar_colors": [
+		123,
+		28,
+		57
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1
+}

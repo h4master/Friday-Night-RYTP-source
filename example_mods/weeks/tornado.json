@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"tornado-trouble",
+			"fighter",
+			[
+				106,
+				93,
+				193
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "kak otpizdit' snegovika",
+	"weekName": "how to beat a snowman",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

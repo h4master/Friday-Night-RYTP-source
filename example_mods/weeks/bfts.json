@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"showdown-at-the-point",
+			"icon-satp",
+			[
+				80,
+				40,
+				113
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "huypizdablyatebatpizdabol",
+	"weekName": "Battle for the stump",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

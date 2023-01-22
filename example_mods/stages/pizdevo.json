@@ -1,0 +1,9 @@
+{
+	"directory": "pizdevo",
+	"defaultZoom": 1,
+	"isPixelStage": false,
+
+	"boyfriend": [840, 10],
+	"girlfriend": [10, 0],
+	"opponent": [270, -10]
+}

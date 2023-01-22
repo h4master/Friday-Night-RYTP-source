@@ -1,0 +1,9 @@
+{
+	"directory": "forest-point",
+	"defaultZoom": 0.65,
+	"isPixelStage": false,
+
+	"boyfriend": [330, 120],
+	"girlfriend": [800, 15],
+	"opponent": [400, 0]
+}

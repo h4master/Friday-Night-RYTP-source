@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"roller-coaster",
+			"homogay",
+			[
+				255,
+				153,
+				55
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "homogay",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "you got it! well you got it dude, you got it",
+	"weekName": "homogay",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

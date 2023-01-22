@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="point-car.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BG-car0000" x="5" y="5" width="1583" height="1117"/>
+	<SubTexture name="BG-car10000" x="1593" y="5" width="1583" height="1117"/>
+	<SubTexture name="BG-car10001" x="3181" y="5" width="1583" height="1117"/>
+	<SubTexture name="BG-car10002" x="4769" y="5" width="1583" height="1117"/>
+	<SubTexture name="BG-car20000" x="6357" y="5" width="1583" height="1117"/>
+	<SubTexture name="BG-car20001" x="5" y="1127" width="1583" height="1117"/>
+	<SubTexture name="BG-car20002" x="1593" y="1127" width="1583" height="1117"/>
+	<SubTexture name="BG-car20003" x="3181" y="1127" width="1583" height="1117"/>
+	<SubTexture name="BG-car20004" x="4769" y="1127" width="1583" height="1117"/>
+	<SubTexture name="BG-car2-shot0000" x="6357" y="1127" width="1583" height="1117"/>
+	<SubTexture name="BG-car2-shot0001" x="5" y="2249" width="1583" height="1117"/>
+	<SubTexture name="BG-car2-shot0002" x="1593" y="2249" width="1583" height="1117"/>
+	<SubTexture name="BG-car30000" x="3181" y="2249" width="1583" height="1117"/>
+	<SubTexture name="BG-car30001" x="4769" y="2249" width="1583" height="1117"/>
+	<SubTexture name="BG-car30002" x="6357" y="2249" width="1583" height="1117"/>
+	<SubTexture name="BG-car30003" x="5" y="3371" width="1583" height="1117"/>
+	<SubTexture name="BG-car40000" x="1593" y="3371" width="1583" height="1117"/>
+	<SubTexture name="BG-car40001" x="3181" y="3371" width="1583" height="1117"/>
+	<SubTexture name="BG-car40002" x="4769" y="3371" width="1583" height="1117"/>
+	<SubTexture name="BG-car40003" x="6357" y="3371" width="1583" height="1117"/>
+	<SubTexture name="BG-car50000" x="5" y="4493" width="1583" height="1117"/>
+	<SubTexture name="BG-car50001" x="1593" y="4493" width="1583" height="1117"/>
+	<SubTexture name="BG-car50002" x="3181" y="4493" width="1583" height="1117"/>
+	<SubTexture name="BG-car50003" x="4769" y="4493" width="1583" height="1117"/>
+	<SubTexture name="BG-car5-shot0000" x="6357" y="4493" width="1583" height="1117"/>
+	<SubTexture name="BG-car5-shot0001" x="5" y="5615" width="1583" height="1117"/>
+	<SubTexture name="BG-car5-shot0002" x="1593" y="5615" width="1583" height="1117"/>
+</TextureAtlas>

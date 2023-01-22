@@ -1,0 +1,93 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				90,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "VLAD-down"
+		},
+		{
+			"offsets": [
+				155,
+				-12
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "VLAD-up"
+		},
+		{
+			"offsets": [
+				53,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "VLAD-left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "VLAD-idle"
+		},
+		{
+			"offsets": [
+				-37,
+				24
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "VLAD-right"
+		},
+		{
+			"offsets": [
+				-37,
+				24
+			],
+			"indices": [
+				10,
+				11,
+				12
+			],
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"loop": true,
+			"name": "VLAD-right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/vlad-borsh",
+	"position": [
+		-240,
+		0
+	],
+	"healthicon": "borj",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		145,
+		0
+	],
+	"camera_position": [
+		-230,
+		-90
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

@@ -1,0 +1,188 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "BF dies"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "BF Dead Loop"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "BF Dead confirm"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-30
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "POCYK-idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-30
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "POCYK-i-alt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-30
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "POCYK-left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-55
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "POCYK-down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-22
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "POCYK-up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				-35
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "POCYK-right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-29
+			],
+			"anim": "beanie-shot",
+			"fps": 24,
+			"name": "POCYK-beanie-shot",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-1,
+				-30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "POCYK-l-miss"
+		},
+		{
+			"offsets": [
+				12,
+				-55
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "POCYK-d-miss"
+		},
+		{
+			"offsets": [
+				16,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "POCYK-u-miss"
+		},
+		{
+			"offsets": [
+				34,
+				-35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "POCYK-r-miss"
+		},
+		{
+			"offsets": [
+				0,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "",
+			"loop": false,
+			"name": ""
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/POCYK-BFTS",
+	"position": [
+		-250,
+		40
+	],
+	"healthicon": "pocyk-bfts",
+	"flip_x": true,
+	"healthbar_colors": [
+		32,
+		30,
+		40
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}
