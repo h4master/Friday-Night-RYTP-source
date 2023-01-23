@@ -4569,7 +4569,7 @@ class PlayState extends MusicBeatState
 			char.playAnim(animToPlay, true);
 		}
 
-		if (daNote.noteType == 'Agality Bullet' || daNote.noteType == 'Steklobaba Bullet')
+		if (daNote.noteType == 'Agaliy Bullet' || daNote.noteType == 'Steklobaba Bullet')
 		{
 			triggerEventNote('Play Animation', 'hurt', 'bf');
 			boyfriend.specialAnim = true;
@@ -4772,7 +4772,7 @@ class PlayState extends MusicBeatState
 			note.wasGoodHit = true;
 			vocals.volume = 1;
 
-			if (note.noteType == 'Agality Bullet' || note.noteType == 'Steklobaba Bullet')
+			if (note.noteType == 'Agaliy Bullet' || note.noteType == 'Steklobaba Bullet')
 			{
 				triggerEventNote('Play Animation', 'dodge', 'bf');
 				boyfriend.specialAnim = true;

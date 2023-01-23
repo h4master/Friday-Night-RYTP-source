@@ -153,7 +153,7 @@ class Note extends FlxSprite
 				case 'GF Sing':
 					gfNote = true;
 
-				case 'Agality Bullet':
+				case 'Agaliy Bullet':
 					texture = 'mechanics/Agaliy Bullet';
 					switch(PlayState.storyDifficulty)
 					{
