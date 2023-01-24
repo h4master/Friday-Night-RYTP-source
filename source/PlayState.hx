@@ -987,6 +987,7 @@ class PlayState extends MusicBeatState
 		{
 			var car:FlxSprite = new FlxSprite(-500, -100);
 			car.frames = Paths.getSparrowAtlas('point-car');
+			car.antialiasing = ClientPrefs.globalAntialiasing;
 			car.animation.addByPrefix('car', 'car', 24, true);
 			car.animation.addByPrefix('car1', 'car1', 24, false);
 			car.animation.addByPrefix('car2', 'car2', 24, false);
