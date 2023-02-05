@@ -95,6 +95,11 @@ class Note extends FlxSprite
 
 	public var hitsoundDisabled:Bool = false;
 
+	public var onHit:()->Void = function() {
+	}
+	public var onMiss:()->Void = function() {
+	}
+
 	private function set_multSpeed(value:Float):Float {
 		resizeByRatio(value / multSpeed);
 		multSpeed = value;
@@ -164,6 +169,8 @@ class Note extends FlxSprite
 						case 2:
 							missHealth = 0.8;
 					}
+					onHit = PlayState.instance.bulletAgaliyHit;
+					onMiss = PlayState.instance.bulletAgaliyMiss;
 
 				case 'Steklobaba Bullet':
 					texture = 'mechanics/Steklobaba Bullet';
@@ -176,6 +183,8 @@ class Note extends FlxSprite
 						case 2:
 							missHealth = 2;
 					}
+					onHit = PlayState.instance.bulletSteklobabaHit;
+					onMiss = PlayState.instance.bulletSteklobabaMiss;
 			}
 			noteType = value;
 		}

@@ -1,66 +1,88 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "SB-idle"
+			"fps": 24,
+			"name": "SB-idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				270,
+				297,
 				-1
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "SB-left"
+			"fps": 24,
+			"name": "SB-left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				43,
-				-62
+				49,
+				-64
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "SB-down"
-		},
-		{
-			"offsets": [
-				194,
-				37
-			],
-			"indices": [],
 			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "SB-up"
+			"name": "SB-down",
+			"indices": []
 		},
 		{
+			"loop": false,
+			"offsets": [
+				210,
+				39
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "SB-up",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				-20,
 				5
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "SB-right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
 			"loop": false,
-			"name": "SB-right"
+			"fps": 24,
+			"anim": "reload",
+			"indices": [],
+			"name": "SB-reload"
+		},
+		{
+			"offsets": [
+				104,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "shoot",
+			"indices": [],
+			"name": "SB-shoot"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/steklobaba",
 	"position": [
 		10,
-		-140
+		-100
 	],
 	"healthicon": "steklobaba",
 	"flip_x": false,
@@ -70,9 +92,9 @@
 		57
 	],
 	"camera_position": [
-		0,
-		0
+		-180,
+		-170
 	],
-	"sing_duration": 4.00000000000001,
-	"scale": 1
+	"sing_duration": 4.5,
+	"scale": 1.1
 }

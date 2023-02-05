@@ -37,7 +37,7 @@
 			"loop": false,
 			"offsets": [
 				0,
-				-30
+				0
 			],
 			"anim": "idle",
 			"fps": 24,
@@ -48,7 +48,7 @@
 			"loop": false,
 			"offsets": [
 				4,
-				-30
+				0
 			],
 			"anim": "idle-alt",
 			"fps": 24,
@@ -59,7 +59,7 @@
 			"loop": false,
 			"offsets": [
 				-1,
-				-30
+				0
 			],
 			"anim": "singLEFT",
 			"fps": 24,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				-55
+				-8,
+				-25
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -80,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				16,
-				-22
+				6,
+				11
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -91,8 +91,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				34,
-				-35
+				44,
+				-15
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -103,7 +103,7 @@
 			"loop": false,
 			"offsets": [
 				0,
-				-29
+				0
 			],
 			"anim": "beanie-shot",
 			"fps": 24,
@@ -113,7 +113,7 @@
 		{
 			"offsets": [
 				-1,
-				-30
+				4
 			],
 			"loop": false,
 			"fps": 24,
@@ -123,8 +123,8 @@
 		},
 		{
 			"offsets": [
-				12,
-				-55
+				-8,
+				-29
 			],
 			"loop": false,
 			"fps": 24,
@@ -134,8 +134,8 @@
 		},
 		{
 			"offsets": [
-				16,
-				-32
+				6,
+				11
 			],
 			"loop": false,
 			"fps": 24,
@@ -145,8 +145,8 @@
 		},
 		{
 			"offsets": [
-				34,
-				-35
+				44,
+				-15
 			],
 			"loop": false,
 			"fps": 24,
@@ -155,15 +155,26 @@
 			"name": "POCYK-r-miss"
 		},
 		{
-			"offsets": [
-				0,
-				-30
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "",
 			"loop": false,
-			"name": ""
+			"offsets": [
+				150,
+				-26
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "POCYK-dodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				150,
+				-6
+			],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "POCYK-hurt",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -175,14 +186,14 @@
 	"healthicon": "pocyk-bfts",
 	"flip_x": true,
 	"healthbar_colors": [
-		32,
-		30,
-		40
+		75,
+		71,
+		115
 	],
 	"camera_position": [
-		0,
-		0
+		-100,
+		-260
 	],
 	"sing_duration": 4,
-	"scale": 0.8
+	"scale": 1.2
 }

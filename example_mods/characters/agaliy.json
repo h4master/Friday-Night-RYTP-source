@@ -3,7 +3,7 @@
 		{
 			"offsets": [
 				0,
-				-83
+				-103
 			],
 			"loop": true,
 			"fps": 24,
@@ -28,8 +28,8 @@
 		},
 		{
 			"offsets": [
-				-102,
-				-1
+				-130,
+				-2
 			],
 			"loop": false,
 			"fps": 24,
@@ -40,7 +40,7 @@
 		{
 			"offsets": [
 				0,
-				-86
+				-106
 			],
 			"loop": false,
 			"fps": 24,
@@ -50,8 +50,8 @@
 		},
 		{
 			"offsets": [
-				-66,
-				26
+				-83,
+				30
 			],
 			"loop": false,
 			"fps": 24,
@@ -61,8 +61,8 @@
 		},
 		{
 			"offsets": [
-				-116,
-				-15
+				-148,
+				-21
 			],
 			"loop": false,
 			"fps": 24,
@@ -72,24 +72,24 @@
 		},
 		{
 			"offsets": [
-				10,
-				0
+				11,
+				1
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "reload",
-			"loop": false,
+			"indices": [],
 			"name": "AGALIY-reload"
 		},
 		{
 			"offsets": [
-				55,
-				-1
+				18,
+				-2
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "shoot",
-			"loop": false,
+			"indices": [],
 			"name": "AGALIY-shoot"
 		}
 	],
@@ -107,9 +107,9 @@
 		68
 	],
 	"camera_position": [
-		0,
-		0
+		-180,
+		-180
 	],
-	"sing_duration": 4.00000000000001,
-	"scale": 1
+	"sing_duration": 4.5,
+	"scale": 1.25
 }

@@ -77,8 +77,7 @@ import vlc.MP4Handler;
 
 using StringTools;
 
-class PlayState extends MusicBeatState
-{
+class PlayState extends MusicBeatState{
 	public static var STRUM_X = 42;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
@@ -263,6 +262,8 @@ class PlayState extends MusicBeatState
 	var tankGround:BGSprite;
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
 	var foregroundSprites:FlxTypedGroup<BGSprite>;
+
+	var forestCar:FlxSprite;
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
@@ -858,6 +859,24 @@ class PlayState extends MusicBeatState
 			add(limo);
 
 		add(dadGroup);
+
+		if (curStage == 'forest-point')
+		{
+			forestCar = new FlxSprite(-500, -100);
+			forestCar.frames = Paths.getSparrowAtlas('point-car');
+			forestCar.antialiasing = ClientPrefs.globalAntialiasing;
+			forestCar.animation.addByPrefix('car', 'car', 24, true);
+			forestCar.animation.addByPrefix('car1', 'car1', 24, false);
+			forestCar.animation.addByPrefix('car2', 'car2', 24, false);
+			forestCar.animation.addByPrefix('car2-shot', 'car2-shot', 24, false);
+			forestCar.animation.addByPrefix('car3', 'car3', 24, false);
+			forestCar.animation.addByPrefix('car4', 'car4', 24, false);
+			forestCar.animation.addByPrefix('car5', 'car5', 24, false);
+			forestCar.animation.addByPrefix('car5-shot', 'car5-shot', 24, false);
+			forestCar.animation.play('car');
+			add(forestCar);
+		}
+
 		add(boyfriendGroup);
 
 		switch(curStage)
@@ -982,23 +1001,6 @@ class PlayState extends MusicBeatState
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
 		startCharacterLua(dad.curCharacter);
-
-		if (curStage == 'forest-point')
-		{
-			var car:FlxSprite = new FlxSprite(-500, -100);
-			car.frames = Paths.getSparrowAtlas('point-car');
-			car.antialiasing = ClientPrefs.globalAntialiasing;
-			car.animation.addByPrefix('car', 'car', 24, true);
-			car.animation.addByPrefix('car1', 'car1', 24, false);
-			car.animation.addByPrefix('car2', 'car2', 24, false);
-			car.animation.addByPrefix('car2-shot', 'car2-shot', 24, false);
-			car.animation.addByPrefix('car3', 'car3', 24, false);
-			car.animation.addByPrefix('car4', 'car4', 24, false);
-			car.animation.addByPrefix('car5', 'car5', 24, false);
-			car.animation.addByPrefix('car5-shot', 'car5-shot', 24, false);
-			car.animation.play('car');
-			add(car);
-		}
 
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
 		startCharacterPos(boyfriend);
@@ -2424,6 +2426,13 @@ class PlayState extends MusicBeatState
 		// Updating Discord Rich Presence (with Time Left)
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
 		#end
+
+		switch(Paths.formatToSongPath(SONG.song))
+		{
+			case 'showdown-at-the-point':
+				FlxG.camera.flash(FlxColor.BLACK, 1.5, null, true);
+		}
+
 		setOnLuas('songLength', songLength);
 		callOnLuas('onSongStart', []);
 	}
@@ -4570,13 +4579,7 @@ class PlayState extends MusicBeatState
 			char.playAnim(animToPlay, true);
 		}
 
-		if (daNote.noteType == 'Agaliy Bullet' || daNote.noteType == 'Steklobaba Bullet')
-		{
-			triggerEventNote('Play Animation', 'hurt', 'bf');
-			boyfriend.specialAnim = true;
-			triggerEventNote('Play Animation', 'shoot', 'dad');
-			dad.specialAnim = true;
-		}
+		daNote.onMiss();
 
 		callOnLuas('noteMiss', [notes.members.indexOf(daNote), daNote.noteData, daNote.noteType, daNote.isSustainNote]);
 	}
@@ -4773,14 +4776,6 @@ class PlayState extends MusicBeatState
 			note.wasGoodHit = true;
 			vocals.volume = 1;
 
-			if (note.noteType == 'Agaliy Bullet' || note.noteType == 'Steklobaba Bullet')
-			{
-				triggerEventNote('Play Animation', 'dodge', 'bf');
-				boyfriend.specialAnim = true;
-				triggerEventNote('Play Animation', 'shoot', 'dad');
-				dad.specialAnim = true;
-			}
-
 			var isSus:Bool = note.isSustainNote; //GET OUT OF MY HEAD, GET OUT OF MY HEAD, GET OUT OF MY HEAD
 			var leData:Int = Math.round(Math.abs(note.noteData));
 			var leType:String = note.noteType;
@@ -4792,6 +4787,8 @@ class PlayState extends MusicBeatState
 				notes.remove(note, true);
 				note.destroy();
 			}
+
+			note.onHit();
 		}
 	}
 
@@ -5047,6 +5044,26 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
+		switch(Paths.formatToSongPath(SONG.song))
+		{
+			case 'showdown-at-the-point':
+				switch(curStep)
+				{
+					case 64:
+						forestCar.animation.play('car1', true);
+					case 128:
+						forestCar.animation.play('car2', true);
+					case 192 | 198 | 204:
+						forestCar.animation.play('car2-shot', true);
+					case 224:
+						forestCar.animation.play('car3', true);
+					case 230:
+						forestCar.animation.play('car4', true);
+					case 236:
+						forestCar.animation.play('car5', true);
+				}
+		}
+
 		lastStepHit = curStep;
 		setOnLuas('curStep', curStep);
 		callOnLuas('onStepHit', []);
@@ -5177,6 +5194,21 @@ class PlayState extends MusicBeatState
 			setOnLuas('mustHitSection', SONG.notes[curSection].mustHitSection);
 			setOnLuas('altAnim', SONG.notes[curSection].altAnim);
 			setOnLuas('gfSection', SONG.notes[curSection].gfSection);
+		}
+
+		switch(Paths.formatToSongPath(SONG.song))
+		{
+			case 'showdown-at-the-point':
+				if (SONG.notes[curSection].mustHitSection)
+				{
+					FlxTween.tween(FlxG.camera, {zoom: 0.65}, 0.7, {ease: FlxEase.sineOut});
+					defaultCamZoom = 0.65;
+				}
+				else
+				{
+					FlxTween.tween(FlxG.camera, {zoom: 0.7}, 0.7, {ease: FlxEase.sineOut});
+					defaultCamZoom = 0.7;
+				}
 		}
 		
 		setOnLuas('curSection', curSection);
@@ -5351,4 +5383,40 @@ class PlayState extends MusicBeatState
 
 	var curLight:Int = -1;
 	var curLightEvent:Int = -1;
+
+	public function bulletAgaliyHit()
+	{
+		triggerEventNote('Play Animation', 'dodge', 'bf');
+		boyfriend.specialAnim = true;
+		triggerEventNote('Play Animation', 'shoot', 'gf');
+		gf.specialAnim = true;
+		forestCar.animation.play('car5-shot');
+	}
+
+	public function bulletAgaliyMiss()
+	{
+		triggerEventNote('Play Animation', 'hurt', 'bf');
+		boyfriend.specialAnim = true;
+		triggerEventNote('Play Animation', 'shoot', 'gf');
+		gf.specialAnim = true;
+		forestCar.animation.play('car5-shot');
+	}
+
+	public function bulletSteklobabaHit()
+	{
+		triggerEventNote('Play Animation', 'dodge', 'bf');
+		boyfriend.specialAnim = true;
+		triggerEventNote('Play Animation', 'shoot', 'dad');
+		dad.specialAnim = true;
+		forestCar.animation.play('car5-shot');
+	}
+
+	public function bulletSteklobabaMiss()
+	{
+		triggerEventNote('Play Animation', 'hurt', 'bf');
+		boyfriend.specialAnim = true;
+		triggerEventNote('Play Animation', 'shoot', 'dad');
+		dad.specialAnim = true;
+		forestCar.animation.play('car5-shot');
+	}
 }
